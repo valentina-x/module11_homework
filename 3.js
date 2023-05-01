@@ -4,11 +4,7 @@
 Выведите в консоль результат.
 */
 
-let sum = function(n) {
-  return function(x) {
-    return n + x; 
-  }
-}
+let sum = (n) => (x) => n + x;
 
 let result = sum(9);
 console.log(result(5))
